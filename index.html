@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ice Cream Sundae Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <!--CDN for FCC Test Suite: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <h1 id="title">Ice Cream Survey</h1>
+  <div id="form-outer">
+    <p id="description">
+      Are you a fan of ice cream?
+    </p>
+    <p>Let us know in the form below!</p>
+    <!--<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">-->
+
+    <form id="survey-form">
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="currentPos">What is your favorite flavor of ice cream?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="flavor" class="dropdown">
+            <option disabled value>Select a flavor</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Cookies and Cream</option>
+            <option value="chocolate">Mint Chocolate Chip</option>
+            <option value="chocolate">Chocolate Chip Cookie Dough</option>
+            <option value="caramel">Buttered Pecan</option>
+            <option value="caramel">Cookie Dough</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="carmel">Moose Tracks</option>
+            <option value="strawberry">Neapolitan</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="most-like">What is your favorite ice cream treat?</label>
+        </div>
+        <div class="rightTab">
+          <select id="most-like" name="mostLike" class="dropdown">
+            <option disabled selected value>Select your favorite treat</option>
+            <option value="challenges">Ice Cream Sundae</option>
+            <option value="projects">Ice Cream Sandwich</option>
+            <option value="community">Ice Cream Cone - Soft Serve</option>
+            <option value="openSource">Ice Cream Cone - Hand Dipped</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">Which ice cream sundae toppings do you prefer?
+            <br /><br />
+            (Choose as many as you would like...)</label>
+        </div>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="1" type="checkbox" class="userRatings">Hot Fudge</label>
+            </li>
+            <li class="checkbox">
+                <label>
+                  <input name="prefer" value="10" type="checkbox" class="userRatings">Caramel Sauce</label>
+              </li>
+            <li class="checkbox">
+              <input name="prefer" value="2" type="checkbox" class="userRatings">Maraschino Cherries</li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="3" type="checkbox" class="userRatings">Whipped Cream</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="4" type="checkbox" class="userRatings">Gummy Bears</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="5" type="checkbox" class="userRatings">Swedish Fish</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="6" type="checkbox" class="userRatings">Crushed Malt Balls</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="7" type="checkbox" class="userRatings">Wet Walnuts</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="8" type="checkbox" class="userRatings">Sprinkles</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="9" type="checkbox" class="userRatings">Blueberries</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input name="prefer" value="10" type="checkbox" class="userRatings">Strawberries</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">Does this picture make you hungry for ice cream?</label>
+          </div>
+          <div class="rightTab">
+              <img src="cherry_icecream_bokeh.jpg" class="img" alt="tasty ice cream sundae">
+            <ul style="list-style: none;">
+
+              <li class="radio">
+                <label>Definitely
+                  <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                </label>
+              </li>
+              <li class="radio">
+                <label>Maybe
+                  <input name="radio-buttons" value="2" type="radio" class="userRatings">
+                </label>
+              </li>
+              <li class="radio">
+                <label>Not sure
+                  <input name="radio-buttons" value="3" type="radio" class="userRatings">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rowTab">
+            <div class="labels">
+              <label for="userRating">Jimmies or Sprinkles?</label>
+            </div>
+            <div class="rightTab">
+                <img src="philly-jimmies.jpg" class="img" alt="jimmies">
+              <ul style="list-style: none;">
+  
+                <li class="radio">
+                  <label>Jimmies
+                    <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                  </label>
+                </li>
+                <li class="radio">
+                  <label>Sprinkles
+                    <input name="radio-buttons" value="2" type="radio" class="userRatings">
+                  </label>
+                </li>
+                <li class="radio">
+                  <label>Jimmy who?
+                    <input name="radio-buttons" value="3" type="radio" class="userRatings">
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="enter your name..." required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">Email: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="enter your email...">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">Age: </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="number" id="number" min="1" max="125" class="input-field" placeholder="we *really* wanna know how OLD u r...k?">
+          </div>
+        </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Any thoughts you would like to share about ice cream?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="..."></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
